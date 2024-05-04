@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#acf8c9;
+}
+
+body main{
+    margin: 20px;
+}
+
+h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: inline-block;
+    padding: 20px;
+    margin-left: 80px;
+}
+
+body header nav div ul li a {
+    text-decoration: none;
+}
+
+/* Header*/
+
+.barra-menu{
+    background-color: #16C79E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.barra-menu img{
+    width: 100px;
+    height: 100px;
+}
+
+.barra-menu nav ul{
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+}
+
+.barra-menu nav ul li{
+    background-color: #acf8c9;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.texto-menu a{
+    text-decoration: none;
+}
+
+/* body header index presentación */
+
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-around;
+}
+
+.presentacion div{
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+}
+.presentacion img{
+    width: 40%;
+    border-radius: 25px;
+}
+
+.texto-presentacion h2{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* body main index servicios */
+
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+
+.menu-servicios {
+    width: 350px;
+    height: 480px;
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+
+.menu-servicios img{
+    width: 350px;
+    height: 300px;
+}
+
+
+.servicio-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 180px;
+    padding: 10px;
+}
+
+h4 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.detalle-servicio{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/*  */
+
+body section div div h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.menu-serv{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.servicios-page{
+    font-size: 0;
+    margin-left: 100px;
+}
+.servicio-adopcion, .servicio-peluqueria, .servicio-paseo, .servicio-guarderia, .servicio-veterinaria {
+    display: inline-block;
+    margin: 40px 20px;
+}
+
+.sobre-nosotros{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 50px;
+}
+
+.sobre-nosotros-imagen{
+    max-width: 700px;
+    margin: 30px 0 30px 600px;
+}
+
+
+
+/*  */
+
+/* Body Adopcion */
+
+.adopcion{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.adopcion{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    column-gap: 25px;
+    row-gap: 30px;
+}
+.animales-descripcion{
+    display: grid;
+    width: 250px;
+    grid-template-columns: minmax(250px, 1fr);
+    grid-template-rows: 0.5fr 1.5fr;
+}
+
+.animales{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* footer */
+
+.pie-pagina {
+    background-color: #16C79E;
+    padding: 20px 0;
+}
+
+.pie-final{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.contenido-footer h3{
+    margin-top: 0;
+}
+
+.section-footer ul li a{
+    text-decoration: none;
+}
+
+
