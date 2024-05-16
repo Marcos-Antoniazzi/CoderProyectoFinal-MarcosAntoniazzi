@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color:#acf8c9;
+body {
+    background-color: #acf8c9;
 }
 
-body main{
+body main {
     margin: 20px;
 }
 
@@ -21,44 +21,60 @@ h1 {
     margin-left: 80px;
 }
 
-body header nav div ul li a {
-    text-decoration: none;
+h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h4 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Header*/
 
-.barra-menu{
-    background-color: #16C79E;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+.barra-menu {
+    background-color: #16C79E !important;
 }
 
-.barra-menu img{
-    width: 100px;
-    height: 100px;
+.menu {
+    flex-grow: 0;
 }
 
-.barra-menu nav ul{
-    list-style: none;
-    display: flex;
-    column-gap: 20px;
+.button-menu {
+    box-shadow: none;
+    border: 3px solid black;
 }
 
-.barra-menu nav ul li{
-    background-color: #acf8c9;
-    padding: 15px;
-    border-radius: 30px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+.button-menu:focus {
+    box-shadow: currentColor;
+    color: grey;
+}
+
+.menu-burguer {
+    background-image: url(./../assets/img/hamburger-menu-svgrepo-com.svg);
+}
+
+.menu-ul {
+    text-align: center;
+}
+
+.menu ul li a {
+    color: black;
     font-size: 20px;
+    font-weight: 500;
 }
 
-.texto-menu a{
-    text-decoration: none;
+.menu ul li a:hover {
+    color: gray;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.logo {
+    width: 8rem;
 }
 
 /* body header index presentación */
@@ -72,31 +88,37 @@ body header nav div ul li a {
     justify-content: space-around;
 }
 
-.presentacion div{
+.presentacion div {
     display: flex;
-    width: 800px;
     flex-direction: column;
     row-gap: 30px;
     justify-content: center;
 }
-.presentacion img{
-    width: 40%;
+
+.imagen-presentacion {
+    width: 100%;
+    height: auto;
+    display: block;
     border-radius: 25px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.texto-presentacion h2{
+.texto-presentacion p {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
+
 /* body main index servicios */
 
-.servicios{
+.servicios {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     row-gap: 20px;
+    padding: 30px;
 }
 
 .menu-servicios {
@@ -104,15 +126,16 @@ body header nav div ul li a {
     height: 480px;
     border: 3px solid grey;
     border-radius: 10px;
+    overflow: hidden;
 }
 
-.menu-servicios img{
+.menu-servicios img {
     width: 350px;
     height: 300px;
+    object-fit: cover;
 }
 
-
-.servicio-texto{
+.servicio-texto {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,77 +145,77 @@ body header nav div ul li a {
     padding: 10px;
 }
 
-h4 {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.detalle-servicio{
+.detalle-servicio {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
-/*  */
 
-body section div div h3 {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+/* body main servicios */
+
+.servicios-page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0px;
 }
 
-.menu-serv{
+.card-servicio {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+}
+
+.card-servicio:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.card-servicio:nth-child(even) {
+    justify-content: start;
+}
+
+.card-servicio div {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 500px;
+}
+
+.servicios-page div img {
+    width: 30vw;
+    height: auto;
+    border-radius: 10px;
+    ;
+}
+
+.menu-serv {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
-.servicios-page{
-    font-size: 0;
-    margin-left: 100px;
-}
-.servicio-adopcion, .servicio-peluqueria, .servicio-paseo, .servicio-guarderia, .servicio-veterinaria {
-    display: inline-block;
-    margin: 40px 20px;
-}
+/* Body main Adopcion */
 
-.sobre-nosotros{
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    margin: 50px;
-}
-
-.sobre-nosotros-imagen{
-    max-width: 700px;
-    margin: 30px 0 30px 600px;
-}
-
-
-
-/*  */
-
-/* Body Adopcion */
-
-.adopcion{
+.adopcion {
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-.adopcion{
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     column-gap: 25px;
     row-gap: 30px;
 }
-.animales-descripcion{
+
+.animales-descripcion {
     display: grid;
     width: 250px;
     grid-template-columns: minmax(250px, 1fr);
     grid-template-rows: 0.5fr 1.5fr;
 }
 
-.animales{
+.animales {
     display: flex;
     flex-wrap: wrap;
     column-gap: 10px;
@@ -200,25 +223,316 @@ body section div div h3 {
     align-items: stretch;
 }
 
+.animales img {
+    width: 30vh;
+    border-radius: 10px;
+}
+
+/* body main nosotros  */
+.sobre-nosotros {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 50px;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.sobre-nosotros-imagen{
+    max-width: 700px;
+    margin: 30px auto;
+    display: block;
+    width: auto;
+    height: auto;
+    border-radius: 15px ;
+}
+
+/* body main contacto */
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3em;
+}
+
+.contacto div img{
+    border-radius: 10px;
+    max-width: 700px;
+}
+.form-div {
+    margin-top: 20px;
+    position: relative;
+}
+
+.form-div input {
+    height: 40px;
+    width: 250px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px 20px;
+    outline: none;
+}
+
+.form-div textarea {
+    height: 150px;
+    width: 250px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px 20px;
+    outline: none;
+}
+
+.form-div label {
+    position: absolute;
+    left: 5px;
+    margin-top: 8px;
+    background-color: white;
+    border-radius: 2px;
+    padding: 1px 7px;
+    font-size: 16px;
+    color: grey;
+}
+
+.form-div input:focus {
+    border-color: black;
+}
+
+.form-div input:focus~label {
+    margin-left: 10px;
+    margin-top: -5px;
+    font-size: 14px;
+    color: black;
+}
+
+.form-div textarea:focus {
+    border-color: black;
+}
+
+.form-div textarea:focus~label {
+    margin-left: 10px;
+    margin-top: -5px;
+    font-size: 14px;
+    color: black;
+}
+
+.form-button {
+    width: 250px;
+}
+
 /* footer */
 
 .pie-pagina {
     background-color: #16C79E;
-    padding: 20px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
 }
 
-.pie-final{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+.pie-final {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.contenido-footer h3{
-    margin-top: 0;
+.pie-final div {
+    width: 200px;
 }
 
-.section-footer ul li a{
-    text-decoration: none;
+.pie-pagina div img {
+    width: 30px;
+    padding: 3px;
 }
 
+.copy {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
 
+/* media query */
+
+/* media query index*/
+
+/* Estilos para tablets (desde 1024px hasta 768px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .presentacion div {
+        width: 100%;
+    }
+
+    .imagen-presentacion {
+        max-width: 100%;
+    }
+}
+
+/* Estilos para móviles (menos de 768px) */
+@media (max-width: 768px) {
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+
+    .presentacion div {
+        width: 100%;
+    }
+
+    .imagen-presentacion {
+        max-width: 100%;
+    }
+
+    .texto-presentacion p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .menu-servicios {
+        width: 45%;
+    }
+
+    .menu-servicios img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-servicios {
+        width: 80%;
+    }
+
+    .menu-servicios img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* media query servicios*/
+
+/* Estilos para tablets (desde 1024px hasta 768px) */
+
+@media (max-width: 1024px) {
+    .card-servicio {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .card-servicio:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .card-servicio div, .card-servicio img {
+        width: 100%; 
+    }
+}
+
+/* Estilos para móviles (menos de 768px) */
+
+@media (max-width: 768px) {
+    .card-servicio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-servicio:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .card-servicio div,
+    .card-servicio img {
+        width: 100%;
+    }
+}
+
+/* media query adopcion */
+
+/* Estilos para tablets (desde 1024px hasta 768px) */
+
+@media (max-width: 1024px){
+    .adopcion{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Estilos para móviles (menos de 768px) */
+
+@media (max-width: 768px){
+    .adopcion{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* media query nosotros */
+
+/* Estilos para tablets (desde 1024px hasta 768px) */
+
+@media (max-width: 1024px){
+    .sobre-nosotros{
+        margin: 20px;
+    }
+
+    .sobre-nosotros-imagen{
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Estilos para móviles (menos de 768px) */
+
+@media (max-width: 768px){
+    .sobre-nosotros{
+        margin: 20px 10px;
+    }
+
+    .sobre-nosotros-imagen{
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* media query contactos */
+
+/* Estilos para tablets (desde 1024px hasta 768px) */
+
+@media (max-width: 1024px){
+    .contacto{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Estilos para móviles (menos de 768px) */
+
+@media (max-width: 768px){
+    .contacto div img {
+        max-width: 400px;
+        }
+}
+
+/* media query footer */
+
+/* Estilos para móviles (menos de 768px) */
+
+@media (max-width: 768px){
+    .pie-final{
+        flex-direction: column;
+        align-items: center;
+    }
+}
