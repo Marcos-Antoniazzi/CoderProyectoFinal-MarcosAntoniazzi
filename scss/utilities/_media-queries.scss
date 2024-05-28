@@ -1,0 +1,68 @@
+// media querie index
+
+//Estilos para tablets (desde 1024px hasta 768px)
+@media (max-width: 1024px) and (min-width: 768px) {
+	.presentacion {
+		flex-direction: column-reverse;
+		padding: 20px;
+
+		div {
+			width: 100%;
+		}
+
+		.imagen-presentacion {
+			max-width: 100%;
+		}
+	}
+}
+
+// Estilos para móviles (menos de 768px)
+@media (max-width: 768px) {
+	.presentacion {
+		flex-direction: column-reverse;
+		padding: 10px;
+
+		div {
+			width: 100%;
+
+			.texto-presentacion {
+				font-size: 0.8em;
+			}
+		}
+
+		.imagen-presentacion {
+			max-width: 100%;
+		}
+	}
+}
+
+//servicios index
+
+//Estilos para tablets (desde 1024px hasta 768px)
+@media (max-width: 1024px) and (min-width: 768px) {
+	.menu-servicios {
+		width: 45%;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+// Estilos para móviles (menos de 768px)
+@media (max-width: 768px) {
+	.servicios {
+		flex-direction: column;
+		align-items: center;
+
+		.menu-servicios {
+			width: 80%;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
