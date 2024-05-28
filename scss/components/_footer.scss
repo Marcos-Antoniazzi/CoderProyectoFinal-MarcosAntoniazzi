@@ -1,0 +1,31 @@
+.pie-pagina {
+	background-color: #16C79E;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: auto;
+
+	.pie-final {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+
+		div {
+			width: 200px;
+		}
+	}
+
+	div {
+		img {
+			width: 30px;
+			padding: 3px;
+		}
+	}
+
+	.copy {
+		display: flex;
+		justify-content: center;
+		padding-top: 20px;
+	}
+}

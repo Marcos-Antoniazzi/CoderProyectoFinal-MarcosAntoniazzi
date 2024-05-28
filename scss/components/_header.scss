@@ -1,0 +1,50 @@
+header {
+	.barra-menu {
+		background-color: #16C79E !important;
+	}
+
+	div {
+		a {
+			.logo {
+				width: 8rem;
+			}
+		}
+
+		.button-menu {
+			box-shadow: none;
+			border: 3px solid black;
+
+			:focus {
+				box-shadow: currentColor;
+				color: grey;
+			}
+
+			.menu-burguer {
+				background-image: url(./../assets/img/hamburger-menu-svgrepo-com.svg);
+			}
+		}
+
+		.menu {
+			flex-grow: 0;
+
+			.menu-ul {
+				text-align: center;
+
+				li {
+
+					a {
+						color: black;
+						font-size: 20px;
+						font-weight: 500;
+
+						:hover {
+							color: gray;
+							font-size: 20px;
+							font-weight: 500;
+						}
+					}
+				}
+			}
+		}
+	}
+}

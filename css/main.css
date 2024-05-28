@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #acf8c9;
+  font-family: "ubuntu", sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+  font-style: normal;
+  display: inline-block;
+  padding: 20px;
+  margin-left: 80px;
+}
+
+h3 {
+  font-weight: 700;
+  font-style: normal;
+}
+
+h4 {
+  font-weight: 400;
+  font-style: normal;
+}
+
+header .barra-menu {
+  background-color: #16C79E !important;
+}
+header div a .logo {
+  width: 8rem;
+}
+header div .button-menu {
+  box-shadow: none;
+  border: 3px solid black;
+}
+header div .button-menu :focus {
+  box-shadow: currentColor;
+  color: grey;
+}
+header div .button-menu .menu-burguer {
+  background-image: url(./../assets/img/hamburger-menu-svgrepo-com.svg);
+}
+header div .menu {
+  flex-grow: 0;
+}
+header div .menu .menu-ul {
+  text-align: center;
+}
+header div .menu .menu-ul li a {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+header div .menu .menu-ul li a :hover {
+  color: gray;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.pie-pagina {
+  background-color: #16C79E;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+}
+.pie-pagina .pie-final {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.pie-pagina .pie-final div {
+  width: 200px;
+}
+.pie-pagina div img {
+  width: 30px;
+  padding: 3px;
+}
+.pie-pagina .copy {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
