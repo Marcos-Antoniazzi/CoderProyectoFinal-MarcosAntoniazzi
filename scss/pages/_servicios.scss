@@ -1,0 +1,46 @@
+// css servicios 
+
+.pagina-servicios {
+	.servicos-page {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		padding: 20px 0px;
+
+		.card-servicio {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			padding: 10px;
+			align-items: center;
+
+			&:nth-child(odd) {
+				flex-direction: row-reverse;
+			}
+
+			&:nth-child(even) {
+				justify-content: start;
+			}
+
+			img {
+				width: 30vw;
+				height: auto;
+				border-radius: 10px;
+			}
+
+			div {
+				display: flex;
+				flex-direction: column;
+				padding: 15px;
+				width: 500px;
+
+				.menu-serv {
+					font-family: "Ubuntu", sans-serif;
+					font-weight: 500;
+					font-style: normal;
+				}
+			}
+		}
+	}
+}

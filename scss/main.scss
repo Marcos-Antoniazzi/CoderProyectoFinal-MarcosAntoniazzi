@@ -1,5 +1,11 @@
 @import "./utilities/globals";
 @import "./components/header";
 
-@import "./components/footer";
+@import "./pages/main-index";
+@import "./pages/servicios";
+@import "./pages/adopcion";
+@import "./pages/nosotros";
+@import "./pages/contacto";
 
+@import "./components/footer";
+@import "./utilities/media-queries";

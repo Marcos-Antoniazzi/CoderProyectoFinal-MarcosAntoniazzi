@@ -37,7 +37,7 @@ header div .button-menu {
   box-shadow: none;
   border: 3px solid black;
 }
-header div .button-menu :focus {
+header div .button-menu:focus {
   box-shadow: currentColor;
   color: grey;
 }
@@ -55,10 +55,109 @@ header div .menu .menu-ul li a {
   font-size: 20px;
   font-weight: 500;
 }
-header div .menu .menu-ul li a :hover {
+header div .menu .menu-ul li a:hover {
   color: gray;
   font-size: 20px;
   font-weight: 500;
+}
+
+main .presentacion {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  justify-content: space-around;
+}
+main .presentacion div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  justify-content: center;
+}
+main .presentacion div .texto-presentacion p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+main .presentacion img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 25px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 20px;
+  padding: 30px;
+}
+.servicios .menu-servicios {
+  width: 350px;
+  height: 480px;
+  border: 3px solid grey;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.servicios .menu-servicios img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+.servicios .menu-servicios .servicio-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 180px;
+  padding: 10px;
+}
+.servicios .menu-servicios .servicio-texto .detalle-servicio {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.pagina-servicios .servicos-page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.pagina-servicios .servicos-page .card-servicio {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+}
+.pagina-servicios .servicos-page .card-servicio:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.pagina-servicios .servicos-page .card-servicio:nth-child(even) {
+  justify-content: start;
+}
+.pagina-servicios .servicos-page .card-servicio img {
+  width: 30vw;
+  height: auto;
+  border-radius: 10px;
+}
+.pagina-servicios .servicos-page .card-servicio div {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 500px;
+}
+.pagina-servicios .servicos-page .card-servicio div .menu-serv {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .pie-pagina {
@@ -85,6 +184,56 @@ header div .menu .menu-ul li a :hover {
   display: flex;
   justify-content: center;
   padding-top: 20px;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .presentacion {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  .presentacion div {
+    width: 100%;
+  }
+  .presentacion .imagen-presentacion {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .presentacion {
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+  .presentacion div {
+    width: 100%;
+  }
+  .presentacion div .texto-presentacion {
+    font-size: 0.8em;
+  }
+  .presentacion .imagen-presentacion {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .menu-servicios {
+    width: 45%;
+  }
+  .menu-servicios img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .servicios {
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicios .menu-servicios {
+    width: 80%;
+  }
+  .servicios .menu-servicios img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
