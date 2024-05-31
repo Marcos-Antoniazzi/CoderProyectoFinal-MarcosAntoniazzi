@@ -1,7 +1,7 @@
 // css servicios 
 
-.pagina-servicios {
-	.servicos-page {
+.pagina-servicio {
+	.servicios-page {
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -25,6 +25,7 @@
 
 			img {
 				width: 30vw;
+				min-width: 300px;
 				height: auto;
 				border-radius: 10px;
 			}

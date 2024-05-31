@@ -123,41 +123,147 @@ main .presentacion img {
   font-style: normal;
 }
 
-.pagina-servicios .servicos-page {
+.pagina-servicio .servicios-page {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   padding: 20px 0px;
 }
-.pagina-servicios .servicos-page .card-servicio {
+.pagina-servicio .servicios-page .card-servicio {
   display: flex;
   flex-direction: row;
   width: 100%;
   padding: 10px;
   align-items: center;
 }
-.pagina-servicios .servicos-page .card-servicio:nth-child(odd) {
+.pagina-servicio .servicios-page .card-servicio:nth-child(odd) {
   flex-direction: row-reverse;
 }
-.pagina-servicios .servicos-page .card-servicio:nth-child(even) {
+.pagina-servicio .servicios-page .card-servicio:nth-child(even) {
   justify-content: start;
 }
-.pagina-servicios .servicos-page .card-servicio img {
+.pagina-servicio .servicios-page .card-servicio img {
   width: 30vw;
+  min-width: 300px;
   height: auto;
   border-radius: 10px;
 }
-.pagina-servicios .servicos-page .card-servicio div {
+.pagina-servicio .servicios-page .card-servicio div {
   display: flex;
   flex-direction: column;
   padding: 15px;
   width: 500px;
 }
-.pagina-servicios .servicos-page .card-servicio div .menu-serv {
+.pagina-servicio .servicios-page .card-servicio div .menu-serv {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-style: normal;
+}
+
+.adopcion {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  column-gap: 25px;
+  row-gap: 30px;
+}
+.adopcion .animales {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: stretch;
+}
+.adopcion .animales img {
+  width: 30vh;
+  border-radius: 10px;
+}
+.adopcion .animales .animales-descripcion {
+  display: grid;
+  width: 250px;
+  grid-template-columns: minmax(250px, 1fr);
+  grid-template-rows: 0.5fr 1.5fr;
+}
+
+main section .sobre-nosotros {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 50px;
+  text-align: justify;
+  font-size: 25px;
+}
+main section .sobre-nosotros-imagen {
+  max-width: 700px;
+  margin: 30px auto;
+  display: block;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+}
+
+main .contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 3em;
+}
+main .contacto div img {
+  border-radius: 10px;
+  max-width: 700px;
+}
+main .contacto form .form-div {
+  margin-top: 20px;
+  position: relative;
+}
+main .contacto form .form-div input {
+  height: 40px;
+  width: 250px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px 20px;
+  outline: none;
+}
+main .contacto form .form-div input:focus {
+  border-color: black;
+}
+main .contacto form .form-div input:focus ~ label {
+  margin-left: 10px;
+  margin-top: -5px;
+  font-size: 14px;
+  color: black;
+}
+main .contacto form .form-div label {
+  position: absolute;
+  left: 5px;
+  margin-top: 8px;
+  background-color: white;
+  border-radius: 2px;
+  padding: 1px 7px;
+  font-size: 16px;
+  color: grey;
+}
+main .contacto form .form-div textarea {
+  height: 150px;
+  width: 250px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px 20px;
+  outline: none;
+}
+main .contacto form .form-div textarea:focus {
+  border-color: black;
+}
+main .contacto form .form-div textarea:focus ~ label {
+  margin-left: 10px;
+  margin-top: -5px;
+  font-size: 14px;
+  color: black;
+}
+main .contacto form .form-button {
+  width: 250px;
 }
 
 .pie-pagina {
@@ -233,6 +339,33 @@ main .presentacion img {
   .servicios .menu-servicios img {
     width: 100%;
     height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .card-servicio {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-servicio:nth-child(odd) {
+    flex-direction: column;
+  }
+  .card-servicio div {
+    width: 100%;
+  }
+  .card-servicio img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .card-servicio:nth-child(odd) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-servicio div {
+    width: 100%;
+  }
+  .card-servicio img {
+    width: 100%;
   }
 }
 
