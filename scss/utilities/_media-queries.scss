@@ -2,67 +2,69 @@
 
 //Estilos para tablets (desde 1024px hasta 768px)
 @media (max-width: 1024px) and (min-width: 768px) {
-	.presentacion {
-		flex-direction: column-reverse;
-		padding: 20px;
+	main {
+		.presentacion {
+			flex-direction: column-reverse;
+			padding: 20px;
 
-		div {
-			width: 100%;
-		}
+			div {
+				width: 100%;
+			}
 
-		.imagen-presentacion {
-			max-width: 100%;
-		}
-	}
-}
-
-// Estilos para móviles (menos de 768px)
-@media (max-width: 768px) {
-	.presentacion {
-		flex-direction: column-reverse;
-		padding: 10px;
-
-		div {
-			width: 100%;
-
-			.texto-presentacion {
-				font-size: 0.8em;
+			.imagen-presentacion {
+				max-width: 100%;
 			}
 		}
-
-		.imagen-presentacion {
-			max-width: 100%;
-		}
-	}
-}
-
-//servicios index
-
-//Estilos para tablets (desde 1024px hasta 768px)
-@media (max-width: 1024px) and (min-width: 768px) {
-	.menu-servicios {
-		width: 45%;
-
-		img {
-			width: 100%;
-			height: auto;
-		}
 	}
 }
 
 // Estilos para móviles (menos de 768px)
 @media (max-width: 768px) {
-	.servicios {
+	main {
+		.presentacion {
+			flex-direction: column-reverse;
+			padding: 10px;
+
+			div {
+				width: 100%;
+
+				.texto-presentacion {
+					font-size: 0.8em;
+				}
+			}
+
+			.imagen-presentacion {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+//media querie index servivios
+
+//media querie para dispositivos tablets desde 1024px a 768px
+
+@media (max-width: 1024px) and (min-width: 768px) {
+	.wrapper{
+		width: 100%;
+
+		.card{
+			width: 45%;
+			margin: 1.5%;
+		}
+	}
+}
+
+//media querie para dispositivos mobiles desde 768px
+
+@media (max-width: 768px){
+	.wrapper{
 		flex-direction: column;
 		align-items: center;
-
-		.menu-servicios {
+		width: 100%;
+		.card{
 			width: 80%;
-
-			img {
-				width: 100%;
-				height: auto;
-			}
+			margin: 1rem 0;
 		}
 	}
 }
@@ -71,38 +73,146 @@
 
 // Estilos para tablets (desde 1024px hasta 768px)
 
-@media (max-width: 1024px) {
-	.card-servicio {
-		flex-direction: column;
-		align-items: center;
+@media (max-width: 1024px) and (min-width: 768px) {
+	.pagina-servicio {
+		.servicios-page {
+			.card-servicio {
+				flex-direction: column;
+				align-items: center;
 
-		&:nth-child(odd) {
-			flex-direction: column;
-		}
+				&:nth-child(odd) {
+					flex-direction: column;
+				}
 
-		div {
-			width: 100%;
-		}
+				div {
+					width: 80%;
+				}
 
-		img {
-			width: 100%;
+				img {
+					width: 80%;
+				}
+			}
 		}
 	}
 }
 
+//Estilos para móviles (menos de 768px)
+
+/* Estilos para móviles (menos de 768px) */
+
 @media (max-width: 768px) {
-	.card-servicio {
-		&:nth-child(odd) {
+	.pagina-servicio {
+		.servicios-page {
+			.card-servicio {
+				flex-direction: column;
+				align-items: center;
+
+				&:nth-child(odd) {
+					flex-direction: column;
+				}
+
+				div {
+					width: 80%;
+				}
+
+				img {
+					width: 80%;
+				}
+			}
+		}
+	}
+}
+
+// media querie adopocion
+
+// Estilos para tablets (desde 1024px hasta 768px)
+
+@media (max-width: 1024px) {
+	.adopcion {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+//Estilos para móviles (menos de 768px)
+
+@media (max-width: 768px) {
+	.adopcion {
+		grid-template-columns: 1fr;
+	}
+}
+
+// media querie nosotros 
+
+// estilos para tablets (desde 1024px hasta 768px)
+
+@media (max-width: 1024px) {
+	main {
+		section {
+			.sobre-nosotros {
+				margin: 20px;
+			}
+
+			.sobre-nosotros-imagen {
+				max-width: 90%;
+				margin: 20px auto;
+			}
+		}
+	}
+}
+
+// Estilos para móviles (menos de 768px)
+
+@media (max-width: 768px) {
+	main {
+		section {
+			.sobre-nosotros {
+				margin: 20px 10px;
+			}
+
+			.sobre-nosotros-imagen {
+				max-width: 100%;
+				margin: 10px 0;
+			}
+		}
+	}
+}
+
+// media querie contacto
+
+// Estilos para tablets (desde 1024px hasta 768px)
+
+@media (max-width: 1024px) {
+	main {
+		.contacto {
 			flex-direction: column;
 			align-items: center;
 		}
+	}
+}
 
-		div {
-			width: 100%;
+// Estilos para móviles (menos de 768px)
+
+@media (max-width: 768px) {
+	main {
+		.contacto {
+			div {
+				img {
+					max-width: 400px;
+				}
+			}
 		}
+	}
+}
 
-		img {
-			width: 100%;
+// media queruie footer
+
+// estilos para moviles (menos de 768px)
+
+@media (max-width: 768px) {
+	.pie-pagina {
+		.pie-final {
+			flex-direction: column;
+			align-items: center;
 		}
 	}
 }

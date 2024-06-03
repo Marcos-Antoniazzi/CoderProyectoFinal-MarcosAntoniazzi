@@ -457,25 +457,25 @@
 
 /* Estilos para tablets (desde 1024px hasta 768px) */
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .adopcion {
         grid-template-columns: repeat(2, 1fr);
     }
-}
+} */
 
 /* Estilos para móviles (menos de 768px) */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .adopcion {
         grid-template-columns: 1fr;
     }
-}
+} */
 
 /* media query nosotros */
 
 /* Estilos para tablets (desde 1024px hasta 768px) */
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .sobre-nosotros {
         margin: 20px;
     }
@@ -490,10 +490,10 @@
         flex-direction: column;
         align-items: center;
     }
-}
+} */
 
 /* Estilos para móviles (menos de 768px) */
-
+/* 
 @media (max-width: 768px) {
     .sobre-nosotros {
         margin: 20px 10px;
@@ -503,34 +503,34 @@
         max-width: 100%;
         margin: 10px 0;
     }
-}
+} */
 
 /* media query contactos */
 
 /* Estilos para tablets (desde 1024px hasta 768px) */
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .contacto {
         flex-direction: column;
         align-items: center;
     }
-}
+} */
 
 /* Estilos para móviles (menos de 768px) */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .contacto div img {
         max-width: 400px;
     }
-}
+} */
 
 /* media query footer */
 
 /* Estilos para móviles (menos de 768px) */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .pie-final {
         flex-direction: column;
         align-items: center;
     }
-}
+} */
