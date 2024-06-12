@@ -167,44 +167,51 @@ main .presentacion img {
   margin-top: 8px;
 }
 
-.pagina-servicio .servicios-page {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px 0px;
-}
-.pagina-servicio .servicios-page .card-servicio {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding: 10px;
-  align-items: center;
-}
-.pagina-servicio .servicios-page .card-servicio:nth-child(odd) {
-  flex-direction: row-reverse;
-}
-.pagina-servicio .servicios-page .card-servicio:nth-child(even) {
-  justify-content: start;
-}
-.pagina-servicio .servicios-page .card-servicio img {
-  width: 30vw;
-  min-width: 300px;
-  height: auto;
-  border-radius: 10px;
-}
-.pagina-servicio .servicios-page .card-servicio div {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  width: 500px;
-}
-.pagina-servicio .servicios-page .card-servicio div .menu-serv {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
+/* .pagina-servicio {
+	.servicios-page {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		padding: 20px 0px;
 
+		.card-servicio {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			padding: 10px;
+			align-items: center;
+
+			&:nth-child(odd) {
+				flex-direction: row-reverse;
+			}
+
+			&:nth-child(even) {
+				justify-content: start;
+			}
+
+			img {
+				width: 30vw;
+				min-width: 300px;
+				height: auto;
+				border-radius: 10px;
+			}
+
+			div {
+				display: flex;
+				flex-direction: column;
+				padding: 15px;
+				width: 500px;
+
+				.menu-serv {
+					font-family: "Ubuntu", sans-serif;
+					font-weight: 500;
+					font-style: normal;
+				}
+			}
+		}
+	}
+} */
 .adopcion {
   padding-top: 10px;
   padding-bottom: 10px;
